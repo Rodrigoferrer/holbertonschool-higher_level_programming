@@ -4,5 +4,5 @@ from add_0 import add
 
 a = 1
 b = 2
-res = (a + b)
+res = add(a,b)
 print(f"{a} + {b} = {res}")
