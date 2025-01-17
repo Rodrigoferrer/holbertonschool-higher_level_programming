@@ -7,4 +7,3 @@ def uppercase(str):
         else:
             stringcopy += char
     print("{}".format(stringcopy))
-
