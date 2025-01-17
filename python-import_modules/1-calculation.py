@@ -7,8 +7,9 @@ if __name__ == "__main__":
     resta = sub(a, b)
     multi = mul(a, b)
     divi = div(a, b)
-    print("{a} + {b} = {suma}".format(a, b,))
-    print("{a} - {b} = {resta}".format(a, b,))
-    print("{a} * {b} = {multi}".format(a, b,))
-    print("{a} / {b} = {divi}".format(a, b,))
+    print("{} + {} = {}".format(a, b, suma))
+    print("{} - {} = {}".format(a, b, resta))
+    print("{} * {} = {}".format(a, b, multi))
+    print("{} / {} = {}".format(a, b, divi))
+    
     
