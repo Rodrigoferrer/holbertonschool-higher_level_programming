@@ -7,9 +7,9 @@ def print_matrix_integer(matrix=[[]]):
         for j in i:
             # condition for when end is not reached
             if j != i[-1]:
-                print("{}".format(j), end=" ")
+                print("{:d}".format(j), end=" ")
             # condition for when end IS reached
             else:
                 # when printing without end arg, end is a line break by
                 # default
-                print("{}".format(j))        
+                print("{:d}".format(j))        
