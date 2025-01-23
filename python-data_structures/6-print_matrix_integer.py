@@ -1,6 +1,8 @@
 #!/usr/bin/python3
 def print_matrix_integer(matrix=[[]]):
     # iterate and store smaller lists into i
+    if matrix == [[]]:
+            print()
     for i in matrix:
         # iterate over list in i storing each value
         # into j
