@@ -7,5 +7,6 @@ def square_matrix_simple(matrix=[]):
             lista_aux.append(j**2) # [16,25,36]
         copy.append(lista_aux) # [[1,4,9], [16,25,36]]
     return copy
+    
 
 
