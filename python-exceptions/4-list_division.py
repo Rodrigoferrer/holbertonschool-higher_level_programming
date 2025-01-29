@@ -1,29 +1,25 @@
-#!/usr/bin/python3
-def roman_to_int(roman_string):
-    if not isinstance(roman_string, str) or roman_string is None:
-        return 0
+def list_division(my_list_1, my_list_2, list_length):
+    result = []
+    
+    for i in range(list_length):
+        try:
+            if i >= len(my_list_1) or i >= len(my_list_2):
+                print("out of range")
+                result.append(0)
+            else:
+                try:
+                    if not isinstance(my_list_1[i], (int, float)) or not isinstance(my_list_2[i], (int, float)):
+                        print("wrong type")
+                        result.append(0)
+                    else:
+                        result.append(my_list_1[i] / my_list_2[i])
+                except ZeroDivisionError:
+                    print("division by 0")
+                    result.append(0)
+        except Exception as e:
+            print("An unexpected error occurred:", e)
+            result.append(0)
+        finally:
+            pass
 
-    roman_values = {
-        'I': 1,
-        'V': 5,
-        'X': 10,
-        'L': 50,
-        'C': 100,
-        'D': 500,
-        'M': 1000
-    }
-
-    total = 0
-    prev_value = 0
-
-    for char in reversed(roman_string):
-        current_value = roman_values.get(char, 0)
-        
-        if current_value < prev_value:
-            total -= current_value
-        else:
-            total += current_value
-        
-        prev_value = current_value
-
-    return total
+    return result
