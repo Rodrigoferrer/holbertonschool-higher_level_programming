@@ -4,4 +4,3 @@ def multiply_by_2(a_dictionary):
     for i in copy_dictionary:
         copy_dictionary[i] = copy_dictionary[i] * 2
     return copy_dictionary
-
