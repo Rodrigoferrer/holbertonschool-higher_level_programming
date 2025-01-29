@@ -5,9 +5,8 @@
 class Square:
     """ Siguen las clases  """
     def __init__(self, size):
-        if size != int:
+        if not isinstance(size, int):
             raise TypeError("Size must be an integer")
         if size < 0:
             raise ValueError("Size must be >= 0")
         self.__size = size
-
