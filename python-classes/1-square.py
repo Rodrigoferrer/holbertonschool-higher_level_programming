@@ -1,7 +1,7 @@
 #!/usr/bin/python3
+""" Alta clase tiene este objeto cuadrado """
+
 class Square:
-    """ Esta es una clase sin atributos aun
-    por eso uso comillas triples para poder poner comentarios estilo doscstring sin nueva linea """
+    """ Siguen las clases  """
     def __init__(self, size):
             self.__size = size
-    
