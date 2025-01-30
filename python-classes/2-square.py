@@ -6,10 +6,10 @@ class Square:
     """Square class with private size attribute"""
     def __init__(self, size=0):
         """Initialize square with optional size
-        
+
         Args:
             size (int, optional): Size of square side. Defaults to 0.
-            
+
         Raises:
             TypeError: If size is not an integer
             ValueError: If size is less than 0
