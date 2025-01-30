@@ -21,7 +21,7 @@ class Square:
         self.__size = size
         return None
         
-        def __init__ area(self, area):
+        def __init__(self, area):
             """Initialize square with optional size
 
         Args:
