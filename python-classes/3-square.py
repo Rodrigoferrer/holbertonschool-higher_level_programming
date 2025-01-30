@@ -20,7 +20,15 @@ class Square:
             raise ValueError("size must be >= 0")
         self.__size = size
         return None
-        def __init__ area(self, area):   
-            self.area = area
-
         
+        def __init__ area(self, area):
+            """Initialize square with optional size
+
+        Args:
+            size (int, optional): Size of square side. Defaults to 0..
+
+        Raises:
+            TypeError: If size is not an integer
+            ValueError: If size is less than 0
+        """   
+            self.area = area
