@@ -21,14 +21,5 @@ class Square:
         self.__size = size
         return None
         
-        def area(self):
-            """Initialize square with optional size
-
-        Args:
-            size (int, optional): Size of square side. Defaults to 0..
-
-        Raises:
-            TypeError: If size is not an integer
-            ValueError: If size is less than 0
-        """   
-            return self.__size * self.__size
+    def area(self):
+        return self.__size * self.__size
