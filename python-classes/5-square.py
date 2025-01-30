@@ -44,7 +44,7 @@ class Square:
         return self.__size * self.__size
     
     def my_print(self):
-        """"Prints hasthags""""
+        """Prints hasthags"""
         if self.size == 0:
             print("")
             return
