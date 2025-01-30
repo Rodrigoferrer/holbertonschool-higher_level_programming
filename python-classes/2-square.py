@@ -8,7 +8,7 @@ class Square:
         """Initialize square with optional size
 
         Args:
-            size (int, optional): Size of square side. Defaults to 0.
+            size (int, optional): Size of square side. Defaults to 0..
 
         Raises:
             TypeError: If size is not an integer
