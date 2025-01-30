@@ -21,7 +21,7 @@ class Square:
         self.__size = size
         return None
         
-        def __init__(self, area):
+        def area(self):
             """Initialize square with optional size
 
         Args:
@@ -31,4 +31,4 @@ class Square:
             TypeError: If size is not an integer
             ValueError: If size is less than 0
         """   
-            self.area = area
+        return self.__size * self.__size
