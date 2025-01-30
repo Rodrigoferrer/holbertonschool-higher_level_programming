@@ -31,4 +31,4 @@ class Square:
             TypeError: If size is not an integer
             ValueError: If size is less than 0
         """   
-        return self.__size * self.__size
+            return self.__size * self.__size
