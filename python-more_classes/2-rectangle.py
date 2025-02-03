@@ -1,3 +1,7 @@
+#!/usr/bin/python3
+"""Script that runs in python3 env"""
+
+
 class Rectangle:
     """Representa un rectángulo."""
 
