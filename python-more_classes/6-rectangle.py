@@ -1,4 +1,4 @@
-    #!/usr/bin/python3
+#!/usr/bin/python3
 """Script that runs in python3 environ"""
 
 
