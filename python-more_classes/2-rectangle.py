@@ -1,7 +1,3 @@
-#!/usr/bin/python3
-"""script to be executed in python3 env"""
-
-
 class Rectangle:
     """A class that defines a rectangle."""
 
@@ -32,13 +28,11 @@ class Rectangle:
         if value < 0:
             raise ValueError("height must be >= 0")
         self.__height = value
-
-    def area(self):
-        area = self.__height * self.__width
-        return area
     
+    def area(self):
+        """Calculate the area of the rectangle"""
+        return self.__height * self.__width
+
     def perimeter(self):
-        perimeter = self.__height + self.__width
-        if self.__width or self.__height == 0:
-            perimeter = 0
-        return perimeter
+        """Calculate the perimeter of the rectangle"""
+        return 2 * (self.__height + self.__width)
