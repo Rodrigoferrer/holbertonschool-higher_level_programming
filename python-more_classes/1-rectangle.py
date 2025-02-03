@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-"""script to be executed in python3 env"""
+"""Module containing Rectangle class definition with area and perimeter calculations."""
 
 
 class Rectangle:
