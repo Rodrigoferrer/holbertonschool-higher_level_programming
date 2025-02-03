@@ -71,7 +71,7 @@ class Rectangle:
         """Calcula el perímetro del rectángulo.
 
         Returns:
-            int: El perímetro del rectángulo, o 0 si el ancho o la altura son 0.
+            int: El perímetro, o 0 si el ancho o la altura son 0.
         """
         if self.__width == 0 or self.__height == 0:
             return 0
