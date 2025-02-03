@@ -86,6 +86,7 @@ class Rectangle:
         for i in range(self.__height):  # Iterar sobre la altura
             for j in range(self.__width):  # Iterar sobre el ancho
                 s += '#'  # Agregar un carácter # para cada columna
-            s += '\n'  # Agregar un salto de línea al final de cada fila
-    
+            if i < self.height -1:
+                s += '\n'  # Agregar un salto de línea al final de cada fila
+
         return s
