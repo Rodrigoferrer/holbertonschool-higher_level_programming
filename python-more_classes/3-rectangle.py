@@ -77,16 +77,16 @@ class Rectangle:
             return 0
         return 2 * (self.__width + self.__height)
     def __str__(self):
-        """Devuelve una representación en cadena del rectángulo usando el carácter #."""
+        """Devuelve una representación en cadena del rectangulo."""
 
         if self.__width == 0 or self.__height == 0:
             return ""
     
         s = ""
-        for i in range(self.__height):  # Iterar sobre la altura
-            for j in range(self.__width):  # Iterar sobre el ancho
-                s += '#'  # Agregar un carácter # para cada columna
+        for i in range(self.__height):
+            for j in range(self.__width):
+                s += '#'
             if i < self.height -1:
-                s += '\n'  # Agregar un salto de línea al final de cada fila
+                s += '\n'
 
         return s
