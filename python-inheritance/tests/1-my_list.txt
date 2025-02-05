@@ -13,13 +13,13 @@
 >>> my_list.print_sorted()
 [-4, -2, -1, 5]
 
->>> my_list = MyList()
->>> my_list.print_sorted()
-[]
-
 >>> my_list = MyList([500, 300, 200, 100])
 >>> my_list.print_sorted()
 [100, 200, 300, 500]
 
 >>> my_list
 [500, 300, 200, 100]
+
+>>> my_list = MyList()
+>>> my_list.print_sorted()
+[]
