@@ -4,6 +4,7 @@
 
 class BaseGeometry:
     """Class for base geometry"""
+    
     def __init__(self):
         return
     def area(self):
