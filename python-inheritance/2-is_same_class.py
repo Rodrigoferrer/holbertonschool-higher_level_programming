@@ -5,7 +5,9 @@
 def is_same_class(obj, a_class):
     """Class"""
 
-    if isinstance(obj, a_class):
+    tipo = type(obj, a_class)
+    
+    if tipo is a_class:
         return True
     else:
         return False
