@@ -39,13 +39,14 @@ class Rectangle(Shape):
     def perimeter(self):
         return self.width + self.height
 
-def shape_info(a):
-    perimetro = perimeter(a)
-    print perimetro
-    areas = area(a)
-    print areas
-
+def shape_info(shape):
+    area = shape.area()
+    perimeter = shape.perimeter()
+    print(f"Área: {area:.2f}")
+    print(f"Perímetro: {perimeter:.2f}")
+ 
 obj1 = Circle(2)
 obj2 = Rectangle(4, 2)
+
 return shape_info(obj1)
 return shape_info(obj2)
