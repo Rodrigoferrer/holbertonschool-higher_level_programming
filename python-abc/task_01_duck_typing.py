@@ -41,6 +41,11 @@ class Rectangle(Shape):
 
 def shape_info(a):
     perimetro = perimeter(a)
-    return perimetro
+    print perimetro
     areas = area(a)
-    return areas
+    print areas
+
+obj1 = Circle()
+obj2 = Rectangle()
+return shape_info(obj1)
+return shape_info(obj2)
