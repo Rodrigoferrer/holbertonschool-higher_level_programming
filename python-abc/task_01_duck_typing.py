@@ -42,11 +42,11 @@ class Rectangle(Shape):
 def shape_info(shape):
     area = shape.area()
     perimeter = shape.perimeter()
-    print(f"Área: {area:.2f}")
-    print(f"Perímetro: {perimeter:.2f}")
+    print ({area})
+    print ({perimeter})
  
 obj1 = Circle(2)
 obj2 = Rectangle(4, 2)
 
-return shape_info(obj1)
-return shape_info(obj2)
+shape_info(obj1)
+shape_info(obj2)
