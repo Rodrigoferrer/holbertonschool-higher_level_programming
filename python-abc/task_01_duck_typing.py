@@ -45,7 +45,7 @@ def shape_info(a):
     areas = area(a)
     print areas
 
-obj1 = Circle()
-obj2 = Rectangle()
+obj1 = Circle(2)
+obj2 = Rectangle(4, 2)
 return shape_info(obj1)
 return shape_info(obj2)
