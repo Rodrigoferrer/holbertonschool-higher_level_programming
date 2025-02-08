@@ -5,18 +5,15 @@ Rectangle = __import__('9-rectangle').Rectangle
 
 
 class Square(Rectangle):
-    """Class Square inherited from Rectangle"""
+    """Class Square with init"""
+
 
     def __init__(self, size):
-        """Constructor for size of Square"""
         self.integer_validator("size", size)
         self.__size = size
-        super().__init__(size, size)
 
     def area(self):
-        """Return the area of the square"""
         return self.__size * self.__size
 
     def __str__(self):
-            """Return the string representation of the Square"""
-        return f"[square] {self.__size}/{self.__size}"
+        return f"[Square] {self.__size}/{self.__size}"
