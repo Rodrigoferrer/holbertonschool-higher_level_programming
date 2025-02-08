@@ -25,5 +25,5 @@
 >>> my_list.print_sorted()
 [10, 20, 30, 50]
 
->>> MyList()
+>>> my_list()
 [50, 30, 20, 10]
