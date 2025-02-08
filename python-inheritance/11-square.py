@@ -1,7 +1,7 @@
 #!/usr/bin/python3
 """Python3"""
 
-Rectangle = __import__('9-rectangle').Rectangle
+  = __import__('9-rectangle').Rectangle
 
 
 class Square(Rectangle):
@@ -19,4 +19,4 @@ class Square(Rectangle):
 
     def __str__(self):
             """Return the string representation of the Square"""
-        return f"[square] {self.__sizeh}/{self.__size}"
+        return f"[square] {self.__size}/{self.__size}"
