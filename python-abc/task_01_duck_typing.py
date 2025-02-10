@@ -18,9 +18,7 @@ class Circle(Shape):
     """Class circle, inherits from abstract class Shape"""
     
     def __init__(self, radius):
-        if radius < 0:
-            raise ValueError
-        self.radius = radius
+        self.radius = abs(radius)
 
     def area(self):
         area = math.pi * (self.radius ** 2)
@@ -47,9 +45,3 @@ def shape_info(shape):
     perimeter = shape.perimeter()
     print ({area})
     print ({perimeter})
- 
-obj1 = Circle(2)
-obj2 = Rectangle(4, 2)
-
-shape_info(obj1)
-shape_info(obj2)
