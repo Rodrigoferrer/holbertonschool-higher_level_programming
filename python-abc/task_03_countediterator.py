@@ -1,7 +1,3 @@
-#!/usr/bin/python3
-"""Python3"""
-
-
 class CountedIterator():
     """Class CountedIterator that heredates from iter"""
 
