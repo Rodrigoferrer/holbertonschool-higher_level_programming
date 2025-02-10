@@ -1,9 +1,22 @@
 #!/usr/bin/python3
-import dis
+import sys
+import importlib.util
+
+
+sys.path.append("/tmp")
+
+
 import hidden_4
 
-if __name__ == "__main__":
+
+def main():
     names = dir(hidden_4)
-    for name in sorted(names):
-        if not name.startswith("__"):
-            print(name)
+
+    correct_names = [name for name in names if not name.startswith("__")]
+
+    for name in sorted(correct_names):
+        print(name)
+
+
+if __name__ == "__main__":
+    main()
