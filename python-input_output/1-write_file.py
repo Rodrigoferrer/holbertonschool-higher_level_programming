@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-"""Python3"""
+"""Python3s"""
 
 def write_file(filename="", text=""):
     """Read, modify and print the content of a file.
