@@ -8,7 +8,7 @@ def write_file(filename="", text=""):
         filename (str): The name of the file to read.
         text (str): the text to add
     """
-    with open(filename, 'r+', encoding='utf-8') as text1:
+    with open(filename, 'w', encoding='utf-8') as text1:
         stringtofile = text1.write(text)
         print(text1.read(text))
-        return len(stringtofile)
+        return stringtofile
