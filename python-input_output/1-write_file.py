@@ -2,13 +2,12 @@
 """Python3"""
 
 def write_file(filename="", text=""):
-     """Read, modify and print the content of a file.
+    """Read, modify and print the content of a file.
 
     Args:
         filename (str): The name of the file to read.
         text (str): the text to add
     """
-    
     with open(filename, 'r+', encoding='utf-8') as text1:
         stringtofile = text1.write(text)
-        print(stringtofile)
+        return len(stringtofile)
