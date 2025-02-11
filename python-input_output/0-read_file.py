@@ -3,7 +3,11 @@
 
 
 def read_file(filename=""):
-    """Function that reads file from main"""
+    """Read and print the content of a file.
+
+    Args:
+        filename (str): The name of the file to read. Defaults to an empty string.
+    """
 
     with open(filename, 'r+', encoding='utf-8') as text:
         print(text.read(), end='')
