@@ -10,4 +10,5 @@ def write_file(filename="", text=""):
     """
     with open(filename, 'r+', encoding='utf-8') as text1:
         stringtofile = text1.write(text)
+        print(text1.read())
         return len(stringtofile)
