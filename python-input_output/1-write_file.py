@@ -10,5 +10,4 @@ def write_file(filename="", text=""):
     """
     with open(filename, 'w', encoding='utf-8') as text1:
         stringtofile = text1.write(text)
-        print(text1.read(text))
         return stringtofile
