@@ -25,7 +25,7 @@ class Student:
         """
         if attrs is None:
             return self.__dict__
-        
+ 
         my_dict = {}
         for attr in attrs:
             if hasattr(self, attr):
