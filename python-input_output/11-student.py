@@ -25,7 +25,7 @@ class Student:
 
         if attrs is None:
             return self.__dict__
-        
+
         my_dict = {}
         for attr in attrs:
             if hasattr(self, attr):
@@ -36,7 +36,6 @@ class Student:
         """Replace all attributes of the Student instance
         Args:
             json (dict): Dictionary of attributes to replace."""
-
 
         for key, value in json.items():
             setattr(self, key, value)
