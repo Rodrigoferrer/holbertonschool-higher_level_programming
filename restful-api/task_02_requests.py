@@ -28,7 +28,7 @@ def fetch_and_save_posts():
     if response.status_code == 200:
         posts = response.json()
 
-        data = []
+        data = [{}]
 
         for post in posts:
             data.append({'id': post['id'], 'title': post['title'], 'body': post['body']})
