@@ -21,7 +21,7 @@ def list_users():
     
 @app.route('/status')
 def status():
-    return 'Ok'
+    return 'OK'
 
 @app.route('/users/<username>')
 def get_user(username):
