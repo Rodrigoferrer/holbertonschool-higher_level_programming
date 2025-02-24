@@ -1,0 +1,85 @@
+2. Cómo abrir un archivo
+Para abrir un archivo en Python, se utiliza la función open(). Esta función toma al menos dos argumentos: el nombre del archivo y el modo de apertura (lectura, escritura, etc.).
+python
+
+Verify
+Copy code
+archivo = open('mi_archivo.txt', 'r')  # Modo de lectura
+3. Cómo escribir texto en un archivo
+Para escribir en un archivo, se debe abrir en modo de escritura ('w') o modo de adición ('a'). El modo 'w' sobrescribe el archivo si ya existe, mientras que 'a' agrega contenido al final.
+python
+
+Verify
+Copy code
+with open('mi_archivo.txt', 'w') as archivo:
+    archivo.write('Hola, mundo!')
+4. Cómo leer el contenido completo de un archivo
+Para leer todo el contenido de un archivo, se puede usar el método read().
+python
+
+Verify
+Copy code
+with open('mi_archivo.txt', 'r') as archivo:
+    contenido = archivo.read()
+    print(contenido)
+5. Cómo leer un archivo línea por línea
+Para leer un archivo línea por línea, se puede usar un bucle for o el método readline().
+python
+
+Verify
+Copy code
+with open('mi_archivo.txt', 'r') as archivo:
+    for linea in archivo:
+        print(linea.strip())  # strip() elimina espacios en blanco
+6. Cómo mover el cursor en un archivo
+Se puede mover el cursor utilizando el método seek(), que permite especificar la posición a la que se desea mover.
+python
+
+Verify
+Copy code
+with open('mi_archivo.txt', 'r') as archivo:
+    archivo.seek(0)  # Mueve el cursor al inicio
+    contenido = archivo.read()
+7. Cómo asegurarse de que un archivo esté cerrado después de usarlo
+Utilizar la declaración with es la forma recomendada de manejar archivos en Python. Esto asegura que el archivo se cierre automáticamente al salir del bloque with, incluso si ocurre un error.
+python
+
+Verify
+Copy code
+with open('mi_archivo.txt', 'r') as archivo:
+    contenido = archivo.read()
+# El archivo se cierra automáticamente aquí
+8. Qué es y cómo usar la declaración with
+La declaración with se utiliza para envolver la ejecución de un bloque de código. Se asegura de que los recursos se liberen adecuadamente, como cerrar archivos o liberar conexiones de red.
+python
+
+Verify
+Copy code
+with open('mi_archivo.txt', 'r') as archivo:
+    # Operaciones con el archivo
+# El archivo se cierra automáticamente
+9. Qué es JSON
+JSON (JavaScript Object Notation) es un formato ligero de intercambio de datos que es fácil de leer y escribir para los humanos y fácil de analizar y generar para las máquinas. Se utiliza comúnmente para transmitir datos entre un servidor y una aplicación web.
+10. Qué es la serialización
+La serialización es el proceso de convertir un objeto en un formato que se puede almacenar o transmitir y luego reconstruir más tarde. En Python, esto se puede hacer utilizando el módulo json para convertir estructuras de datos de Python en cadenas JSON.
+11. Qué es la deserialización
+La deserialización es el proceso inverso de la serialización, donde se convierte una cadena en formato JSON de nuevo a una estructura de datos de Python.
+12. Cómo convertir una estructura de datos de Python a una cadena JSON
+Se utiliza json.dumps() para convertir un objeto de Python (como un diccionario o una lista) en una cadena JSON.
+python
+
+Verify
+Copy code
+import json
+datos = {'nombre': 'Juan', 'edad': 30}
+json_string = json.dumps(datos)
+
+
+
+Share
+New
+Edit
+Continue
+Bookmark message
+Copy message
+Verify Answer
