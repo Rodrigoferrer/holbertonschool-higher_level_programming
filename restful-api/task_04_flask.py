@@ -7,6 +7,8 @@ from flask import Flask, jsonify, request
 
 app = Flask(__name__)
 
+users = {}
+
 @app.route('/')
 def home():
     return ("Welcome to the Flask API!")
@@ -26,27 +28,19 @@ def get_user(username):
         return jsonify(user), 200
     else:
         return jsonify({"error": "User not found"}), 404
+  
 
 @app.route("/add_user", methods=["POST"])
 def add_user():
-    data = request.get_json()
+    user_data = request.get_json()
+    username = user_data.get("username")
 
-    if "username" not in data:
+    if not username:
         return jsonify({"error": "Username is required"}), 400
 
-    username = data["username"]
+    users[username] = user_data
 
-    if username in users:
-        return jsonify({"error": "Username already exists"}), 201
-
-    users[username] = {
-        "username": data["username"],
-        "name": data["name"],
-        "age": data["age"],
-        "city": data["city"]
-    }
-
-    return jsonify({"message": "User added", "user": users[username]}), 201
+    return jsonify({"message": "User added", "user": user_data}), 201
 
 if __name__ == '__main__':
     app.run(debug=True)
