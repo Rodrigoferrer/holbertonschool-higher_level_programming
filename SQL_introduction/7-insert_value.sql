@@ -1,2 +1,2 @@
 -- Inserting a new row into first_table
-FROM first_table INSERT ROWS id=89, name=Best School;
+INSERT INTO first_table IF NOT EXISTS (id, name) VALUES (89, 'Best School');
