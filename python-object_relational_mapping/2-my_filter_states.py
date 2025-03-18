@@ -30,7 +30,7 @@ if __name__ == "__main__":
     ORDER BY id ASC;
     """
     
-    cursor.execute(query, (f"{input_from_user}%",))
+    cursor.execute(query, ("{}%".format(input_from_user),))
 
     results = cursor.fetchall()
 
