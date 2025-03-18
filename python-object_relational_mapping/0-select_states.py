@@ -1,4 +1,6 @@
-import Mysqldb
+#!/usr/bin/python3
+
+import MySQLdb
 
 username = 'rodrigo'
 password = 'admin'
