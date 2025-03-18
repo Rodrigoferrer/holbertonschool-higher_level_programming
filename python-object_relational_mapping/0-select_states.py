@@ -3,7 +3,7 @@
 import MySQLdb
 
 username = 'rodrigo'
-password = 'admin'
+password = ''
 database = 'hbtn_0e_0_usa'
 
 db = MySQLdb.connect(host="localhost", user=username, passwd=password, db=database, port=3306)
