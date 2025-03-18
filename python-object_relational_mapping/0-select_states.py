@@ -1,4 +1,9 @@
 #!/usr/bin/python3
+
+"""
+Script that uses a database from mysql
+"""
+
 import MySQLdb
 import sys
 
