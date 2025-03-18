@@ -2,7 +2,7 @@
 
 """
 Script that lists all states with a name
-starting with a given letter 
+starting with a given letter
 from the database hbtn_0e_0_usa.
 """
 
