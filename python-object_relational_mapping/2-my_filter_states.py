@@ -1,7 +1,9 @@
 #!/usr/bin/python3
 
 """
-Script that lists all states with a name starting with a given letter from the database hbtn_0e_0_usa.
+Script that lists all states with a name
+starting with a given letter 
+from the database hbtn_0e_0_usa.
 """
 
 import MySQLdb
@@ -26,10 +28,10 @@ if __name__ == "__main__":
     query = """
     SELECT id, name
     FROM states
-    WHERE name LIKE %s
+    WHERE BINARY name LIKE %s
     ORDER BY id ASC;
     """
-    
+
     cursor.execute(query, ("{}%".format(input_from_user),))
 
     results = cursor.fetchall()
