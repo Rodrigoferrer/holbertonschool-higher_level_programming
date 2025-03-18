@@ -1,5 +1,8 @@
 #!/usr/bin/python3
-"""This script connects to a database from mysql"""
+
+"""
+This script connects to a database from mysql
+"""
 
 import MySQLdb
 
