@@ -5,9 +5,10 @@ This script connects to a database from mysql
 """
 
 import MySQLdb
+import os
 
 username = 'root'
-password = 'admin'
+password = os.getenv('DB_PASSWORD')
 database = 'hbtn_0e_0_usa'
 
 db = MySQLdb.connect(host="localhost", user=username, passwd=password, db=database, port=3306)
@@ -23,3 +24,4 @@ for row in results:
 
 cursor.close()
 db.close()
+
