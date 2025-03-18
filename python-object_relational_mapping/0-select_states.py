@@ -7,6 +7,11 @@ This script connects to a database from mysql
 import MySQLdb
 import os
 
+
+"""
+This script connects to a database from mysql
+"""
+
 username = 'root'
 password = os.getenv('DB_PASSWORD')
 database = 'hbtn_0e_0_usa'
