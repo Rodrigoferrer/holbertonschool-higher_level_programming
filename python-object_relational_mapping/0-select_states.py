@@ -1,32 +1,21 @@
 #!/usr/bin/python3
-
-"""
-This script connects to a database from mysql
-"""
-
 import MySQLdb
-import os
+import sys
 
+if __name__ == "__main__":
+    username = sys.argv[1]
+    password = sys.argv[2]
+    database = sys.argv[3]
 
-"""
-This script connects to a database from mysql
-"""
+    db = MySQLdb.connect(host="localhost", port=3306, user=username, passwd=password, db=database)
+    cursor = db.cursor()
 
-username = 'root'
-password = os.getenv('DB_PASSWORD')
-database = 'hbtn_0e_0_usa'
+    cursor.execute("SELECT * FROM states ORDER BY id ASC")
 
-db = MySQLdb.connect(host="localhost", user=username, passwd=password, db=database, port=3306)
+    results = cursor.fetchall()
 
-cursor = db.cursor()
+    for row in results:
+        print(row)
 
-cursor.execute("SELECT * FROM states ORDER BY id ASC")
-
-results = cursor.fetchall()
-
-for row in results:
-    print(row)
-
-cursor.close()
-db.close()
-
+    cursor.close()
+    db.close()
