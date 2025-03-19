@@ -2,7 +2,8 @@
 
 """
 Script that lists --
-from the database hbtn_0e_0_usa preventing slq injection by passing by parameters.
+from the database hbtn_0e_0_usa preventing slq injection
+by passing by parameters.
 """
 
 import MySQLdb
@@ -33,8 +34,8 @@ if __name__ == "__main__":
         """)
 
     cursor.execute(query, (state_name,))
-    #al usar una tupla la libreria hace
-    #la verificacion del parametro internamente
+    # al usar una tupla la libreria hace
+    # la verificacion del parametro internamente
 
     results = cursor.fetchall()
 
