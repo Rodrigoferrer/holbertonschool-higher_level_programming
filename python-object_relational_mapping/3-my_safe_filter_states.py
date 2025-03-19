@@ -13,7 +13,7 @@ if __name__ == "__main__":
     username = sys.argv[1]
     password = sys.argv[2]
     database = sys.argv[3]
-    input_from_user("Enter the state name") = sys.argv[4]
+    input_from_user = sys.argv[4]
 
     db = MySQLdb.connect(
         host="localhost",
