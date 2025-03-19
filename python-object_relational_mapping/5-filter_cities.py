@@ -14,6 +14,7 @@ if __name__ == "__main__":
     database = sys.argv[3]
     state_name = sys.argv[4]
 
+
     db = MySQLdb.connect(
         host="localhost",
         port=3306,
@@ -32,12 +33,15 @@ if __name__ == "__main__":
         ORDER BY cities.id ASC
         """)
 
-    cursor.execute(query, ("{}%".format(state_name),))
+    cursor.execute(query, (state_name,)) #al usar una tupla la libreria hace la verificacion del parametro internamente
+
 
     results = cursor.fetchall()
-
-    for row in results:
-        print(row)
+    
+    if results:
+        print(", ".join(city[0] for city in results))
+    else:
+        print("")
 
     cursor.close()
     db.close()
