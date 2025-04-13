@@ -1,8 +1,5 @@
--- Este script cuenta el número de programas de televisión por género
--- en la base de datos hbtn_0d_tvshows.
-SELECT g.name AS genre, COUNT(s.id) AS number_of_shows
-FROM genres g
-JOIN tv_shows s ON g.id = s.genre_id
-GROUP BY g.id
-HAVING COUNT(s.id) > 0
+-- lists all genres from hbtn_0d_tvshows
+SELECT tv_genres.name AS genre, COUNT(show_id) AS number_of_shows
+FROM tv_genres JOIN tv_show_genres ON tv_genres.id = tv_show_genres.genre_id
+GROUP BY genre
 ORDER BY number_of_shows DESC;
